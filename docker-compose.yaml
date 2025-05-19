@@ -21,8 +21,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      # Cambie esta contraseña antes de poner en producción
-      - GF_SECURITY_ADMIN_PASSWORD=grafana123
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
       - GF_USERS_ALLOW_SIGN_UP=false
     volumes:
       - grafana_data:/var/lib/grafana
